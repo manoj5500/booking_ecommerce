@@ -30,7 +30,7 @@ class _StoredDataPageState extends State<StoredDataPage> {
       appBar: AppBar(
         title: Text("Stored Favorites",style: TextStyle(color:  Color(0xFF4C53A5),fontWeight: FontWeight.bold),),
         backgroundColor: Colors.white,
-        automaticallyImplyLeading: false, 
+        automaticallyImplyLeading: false,
       ),
       body: storedItems.isNotEmpty
           ? ListView.builder(
