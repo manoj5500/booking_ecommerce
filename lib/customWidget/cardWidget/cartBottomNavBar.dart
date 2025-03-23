@@ -7,7 +7,6 @@ class CartBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        // padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         height: 150,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

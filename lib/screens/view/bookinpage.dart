@@ -1,5 +1,5 @@
 
-// /import 'package:bookingproject/screens/view/storedDataPage.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Map<String, dynamic> item = Get.arguments ?? {}; // 🔥 Fix: Avoid null arguments
+    final Map<String, dynamic> item = Get.arguments ?? {}; 
 
     return Scaffold(
       appBar: AppBar(title: Text("Favorites"), backgroundColor: Color(0xFF4C53A5)),
@@ -34,10 +34,10 @@ class FavoritesPage extends StatelessWidget {
                           child: Text(item["description"], textAlign: TextAlign.center),
                         ),
 
-                        // Confirm Button
+                        
                         ElevatedButton.icon(
                           onPressed: () async {
-                            // await LocalStorageService.saveSelectedItem(item);
+                           
                             Get.defaultDialog(
                               title: "Booking Confirmed",
                               middleText: "Your booking has been successfully confirmed!",
@@ -45,7 +45,7 @@ class FavoritesPage extends StatelessWidget {
                             );
                             Future.delayed(Duration(seconds: 2), () {
                               Get.back();
-                              // Get.to(() => StoredDataPage());
+                              
                             });
                           },
                           icon: Icon(CupertinoIcons.cart_badge_plus),

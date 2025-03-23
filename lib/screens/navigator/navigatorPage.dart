@@ -17,7 +17,7 @@ class Navigatorpage extends StatelessWidget {
             color: Color(0xff4C53A5),
             height: 70,
             onTap: (index) {
-              navigationController.changePage(index); // Change the page when tab is selected
+              navigationController.changePage(index); 
             },
             items: const [
               Icon(Icons.home, size: 30, color: Colors.white),

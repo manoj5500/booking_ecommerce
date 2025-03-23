@@ -33,13 +33,6 @@ class _HomeappbarState extends State<Homeappbar> {
             ),
             Spacer(),
             InkWell(
-              // onTap: () {
-              //   Navigator.pushNamed(
-              //     context,
-              //     "/cardpage",
-              //   ); // Add "/" before "cardpage"
-              //   print("Navigating to Card Page...");
-              // },
                 onTap: () {
               Get.toNamed("/cardpage"); // Correct navigation using GetX
               print("Navigating to Card Page...");

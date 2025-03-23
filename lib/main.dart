@@ -78,7 +78,7 @@ void main() async {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',  // Default initial route, can be set to '/login' if needed
       getPages: [
-        GetPage(name: '/', page: () => LoginPage()),    
+        // GetPage(name: '/', page: () => LoginPage()),    
         GetPage(name: '/', page: () => Navigatorpage()), 
         GetPage(name: '/', page: () => Cardpage()),
         GetPage(name: '/', page: () => LoginSuccessPage()),

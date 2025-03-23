@@ -30,8 +30,8 @@ class _CardpageState extends State<Cardpage> {
             ),
             child: Column(
               children: [
-                Cartitemsamples(), // Replace with your custom widget
-                // Optional: Add space if needed
+                Cartitemsamples(), 
+                
               ],
             ),
           ),

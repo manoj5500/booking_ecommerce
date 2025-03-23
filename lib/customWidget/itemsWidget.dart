@@ -2,7 +2,6 @@ import 'package:bookingproject/customWidget/itemDetailsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:bookingproject/screens/controller/navigatorcontroller.dart';
-// import 'package:bookingproject/screens/item_details_screen.dart';
 
 class Itemswidget extends StatelessWidget {
   const Itemswidget({super.key});
@@ -65,10 +64,7 @@ class Itemswidget extends StatelessWidget {
                 ],
               ),
               InkWell(
-                // onTap: () {
-                //   // Navigate to details page with item details
-                //   Get.to(() => ItemDetailPage(item: item));
-                // },
+               
                 onTap: () {
                   
                   Navigator.push(

@@ -1,14 +1,9 @@
-import 'package:bookingproject/screens/navigator/navigatorPage.dart';
+
 import 'package:bookingproject/screens/view/bookingpages/bookingconfirmpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-// import 'package:bookingproject/screens/favorites_page.dart'; // Import FavoritesPage
 
-// import 'package:localstorage/localstorage.dart';
-
-// import 'package:shared_preferences/shared_preferences.dart';
-// import 'dart:convert';
 
 class Itembuttomnavbar extends StatelessWidget {
   final Map<String, dynamic> item;

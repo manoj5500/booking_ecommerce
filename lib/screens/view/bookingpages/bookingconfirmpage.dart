@@ -1,7 +1,7 @@
 
-import 'package:bookingproject/main.dart';
+
 import 'package:bookingproject/screens/navigator/navigatorPage.dart';
-import 'package:bookingproject/screens/view/homepage.dart';
+
 import 'package:bookingproject/screens/view/localservice/favourstorage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +11,7 @@ import 'package:get/get_core/src/get_main.dart';
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Map<String, dynamic> item = Get.arguments ?? {}; // Handle null safely
+    final Map<String, dynamic> item = Get.arguments ?? {};
 
     return Scaffold(
       backgroundColor:   Colors.grey[200],
@@ -95,20 +95,12 @@ class FavoritesPage extends StatelessWidget {
                           SizedBox(height: 15),
                           ElevatedButton.icon(
                             onPressed: () async {
-                              // await FavoriteStorage.saveSelectedItem(item);
-
-                              // Get.defaultDialog(
-                              //   title: "Booking Confirmed",
-                              //   middleText: "Your booking has been successfully confirmed!",
-                              //   barrierDismissible: false,
-                              // );
-
-                              // Future.delayed(Duration(seconds: 2), () {
+                              
                               Get.back();
                               Get.to(
                                 () => Navigatorpage(),
                               ); // Navigate to stored data page
-                              // });
+                            
                             },
 
                             icon: Icon(CupertinoIcons.clear,color: Colors.white,),
@@ -116,14 +108,14 @@ class FavoritesPage extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Color(
                                 0xFF4C53A5,
-                              ), // Button background color
+                              ), 
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
-                              ), // Optional: Rounded corners
+                              ), 
                               padding: EdgeInsets.symmetric(
                                 horizontal: 13,
                                 vertical: 20,
-                              ), // Optional: Button padding
+                              ), 
                             ),
                           ),
                         ],

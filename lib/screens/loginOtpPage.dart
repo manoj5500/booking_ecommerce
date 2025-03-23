@@ -1,70 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import 'package:bookingproject/controller/auth_controller.dart';
-
-// class OtpPage extends StatelessWidget {
-//   final List<TextEditingController> otpControllers = List.generate(6, (_) => TextEditingController());
-//   final AuthController authController = Get.find();
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.blue[900],
-//       // appBar: AppBar(title: const Text("Enter OTP")),
-//       body: Padding(
-//         padding: const EdgeInsets.all(20.0),
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             // OTP Input Fields (6 individual fields for OTP)
-//             Row(
-//               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//               children: List.generate(6, (index) {
-//                 return SizedBox(
-//                   width: 40,
-//                   child: TextField(
-//                     controller: otpControllers[index],
-//                     keyboardType: TextInputType.number,
-//                     textAlign: TextAlign.center,
-//                     maxLength: 1,
-//                     style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-//                     decoration: InputDecoration(
-//                       counterText: "", // To hide the counter
-//                       border: OutlineInputBorder(),
-//                       focusedBorder: OutlineInputBorder(
-//                         borderSide: BorderSide(color: Colors.blue),
-//                       ),
-//                     ),
-//                     onChanged: (value) {
-//                       if (value.length == 1 && index < 5) {
-//                         FocusScope.of(context).nextFocus(); // Move to next field automatically
-//                       } else if (value.isEmpty && index > 0) {
-//                         FocusScope.of(context).previousFocus(); // Move to previous field when deleted
-//                       }
-//                     },
-//                   ),
-//                 );
-//               }),
-//             ),
-//             const SizedBox(height: 20),
-//             Obx(() => authController.isLoading.value
-//                 ? const CircularProgressIndicator()
-//                 : ElevatedButton(
-//                     onPressed: () {
-//                       // Concatenate OTP values from all fields and verify
-//                       String enteredOtp = otpControllers.map((controller) => controller.text).join();
-//                       authController.verifyOtp(enteredOtp); // Verify OTP through the controller
-//                     },
-//                     child: const Text("Verify OTP"),
-//                   )),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -104,7 +37,7 @@ class   OtpPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    // OTP Input Fields (6 individual fields for OTP)
+                   
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: List.generate(6, (index) {
@@ -125,9 +58,9 @@ class   OtpPage extends StatelessWidget {
                             ),
                             onChanged: (value) {
                               if (value.length == 1 && index < 5) {
-                                FocusScope.of(context).nextFocus(); // Move to next field automatically
+                                FocusScope.of(context).nextFocus(); 
                               } else if (value.isEmpty && index > 0) {
-                                FocusScope.of(context).previousFocus(); // Move to previous field when deleted
+                                FocusScope.of(context).previousFocus(); 
                               }
                             },
                           ),
@@ -145,9 +78,8 @@ class   OtpPage extends StatelessWidget {
                                         backgroundColor: Colors.blue[900],
                                       ),
                               onPressed: () {
-                                // Concatenate OTP values from all fields and verify
                                 String enteredOtp = otpControllers.map((controller) => controller.text).join();
-                                authController.verifyOtp(enteredOtp); // Verify OTP through the controller
+                                authController.verifyOtp(enteredOtp); 
                               },
                               child: const Text("Verify OTP",style: TextStyle(color: Colors.white),),
                             ),

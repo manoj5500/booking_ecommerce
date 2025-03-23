@@ -1,11 +1,7 @@
 
-
-
 import 'package:bookingproject/screens/view/bookingpages/itembuttomNavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-// import 'package:get/get.dart';
-// import 'package:bookingproject/screens/favorites_page.dart'; // Make sure to import FavoritesPage
 
 class ItemDetailPage extends StatelessWidget {
   final Map<String, dynamic> item;
@@ -73,6 +69,42 @@ class ItemDetailPage extends StatelessWidget {
                       itemPadding: EdgeInsets.symmetric(horizontal: 4),
                       itemBuilder: (context, _) => Icon(Icons.favorite, color: Color(0xFF4C53A5)),
                       onRatingUpdate: (index) {},
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.only(left: 6),
+                child: Row(
+                  children: [
+                     Text(
+                      "size :",
+                      style: TextStyle(fontSize: 16, color: Colors.black87),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      "${item["size"]}",
+                      style: TextStyle(fontSize: 16, color: Colors.black87),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+               SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.only(left: 6),
+                child: Row(
+                  children: [
+                     Text(
+                      "Color :",
+                      style: TextStyle(fontSize: 16, color: Colors.black87),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      item["colors"],
+                      style: TextStyle(fontSize: 16, color: Colors.black87),
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
