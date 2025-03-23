@@ -23,7 +23,7 @@ class _HomeappbarState extends State<Homeappbar> {
             Padding(
               padding: EdgeInsets.only(left: 20),
               child: Text(
-                "DP Shop",
+                "Shop",
                 style: TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.bold,

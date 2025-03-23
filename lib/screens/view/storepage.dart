@@ -30,7 +30,7 @@ class _StoredDataPageState extends State<StoredDataPage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text(
-          "Stored Favorites",
+          "Orders",
           style: TextStyle(color: Color(0xFF4C53A5), fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.white,
