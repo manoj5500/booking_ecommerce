@@ -32,16 +32,10 @@ class _HomeappbarState extends State<Homeappbar> {
               ),
             ),
             Spacer(),
-            InkWell(
-                onTap: () {
-              Get.toNamed("/cardpage"); // Correct navigation using GetX
-              print("Navigating to Card Page...");
-            },
-              child: Icon(
-                Icons.shopping_bag_outlined,
-                size: 30,
-                color: const Color.fromARGB(255, 102, 112, 120),
-              ),
+            Icon(
+              Icons.shopping_bag_outlined,
+              size: 30,
+              color: const Color.fromARGB(255, 102, 112, 120),
             ),
           ],
         ),
